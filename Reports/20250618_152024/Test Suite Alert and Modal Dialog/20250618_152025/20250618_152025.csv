@@ -1,0 +1,92 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test Suite Alert and Modal Dialog,Chrome 137.0.7151.105,,,18-06-2025 15:20:28,18-06-2025 15:21:06,38.563s,PASSED
+,,,,,,,
+Test Cases/Success Run Alerts,Chrome 137.0.7151.105,,,18-06-2025 15:20:28,18-06-2025 15:20:52,23.948s,PASSED
+"openBrowser(""https://demoqa.com"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:28,18-06-2025 15:20:35,6.880s,PASSED
+maximizeWindow(),Chrome 137.0.7151.105,,,18-06-2025 15:20:35,18-06-2025 15:20:35,0.446s,PASSED
+"verifyElementPresent(findTestObject(""Menu/card-alert-frame""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:35,18-06-2025 15:20:36,0.682s,PASSED
+"click(findTestObject(""Menu/card-alert-frame""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:36,18-06-2025 15:20:36,0.294s,PASSED
+currentUrl = getUrl(),Chrome 137.0.7151.105,,,18-06-2025 15:20:36,18-06-2025 15:20:36,0.014s,PASSED
+"verifyMatch(currentUrl, "".*alertsWindows.*"", true)",Chrome 137.0.7151.105,,,18-06-2025 15:20:36,18-06-2025 15:20:36,0.011s,PASSED
+"verifyElementPresent(findTestObject(""Menu/alert-menu""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:36,18-06-2025 15:20:41,4.599s,PASSED
+"click(findTestObject(""Menu/alert-menu""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:41,18-06-2025 15:20:41,0.284s,PASSED
+alertUrl = getUrl(),Chrome 137.0.7151.105,,,18-06-2025 15:20:41,18-06-2025 15:20:41,0.017s,PASSED
+"verifyMatch(alertUrl, "".*alerts.*"", true)",Chrome 137.0.7151.105,,,18-06-2025 15:20:41,18-06-2025 15:20:41,0.003s,PASSED
+"alertButton = findTestObject(""Alerts/Button/alert-btn"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:41,18-06-2025 15:20:41,0.011s,PASSED
+"waitForElementClickable(alertButton, 10)",Chrome 137.0.7151.105,,,18-06-2025 15:20:41,18-06-2025 15:20:42,0.487s,PASSED
+"verifyElementPresent(findTestObject(""Alerts/Button/alert-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.220s,PASSED
+"click(findTestObject(""Alerts/Button/alert-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.275s,PASSED
+verifyAlertPresent(0),Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.028s,PASSED
+alertText = getAlertText(),Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.011s,PASSED
+"verifyMatch(alertText, ""You clicked a button"", false)",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.004s,PASSED
+acceptAlert(),Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.014s,PASSED
+"timeAlertButton = findTestObject(""Alerts/Button/timer-alert-btn"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.008s,PASSED
+"waitForElementClickable(timeAlertButton, 10)",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:42,0.230s,PASSED
+"verifyElementPresent(findTestObject(""Alerts/Button/timer-alert-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:42,18-06-2025 15:20:43,0.227s,PASSED
+"click(findTestObject(""Alerts/Button/timer-alert-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:43,18-06-2025 15:20:43,0.245s,PASSED
+waitForAlert(10),Chrome 137.0.7151.105,,,18-06-2025 15:20:43,18-06-2025 15:20:48,5.134s,PASSED
+verifyAlertPresent(0),Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.021s,PASSED
+timerAlertText = getAlertText(),Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.006s,PASSED
+"verifyMatch(timerAlertText, ""This alert appeared after 5 seconds"", false)",Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.002s,PASSED
+acceptAlert(),Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.006s,PASSED
+"confirmButton = findTestObject(""Alerts/Button/confirm-btn"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.004s,PASSED
+"waitForElementClickable(confirmButton, 10)",Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:48,0.226s,PASSED
+"verifyElementPresent(findTestObject(""Alerts/Button/confirm-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:48,18-06-2025 15:20:49,0.225s,PASSED
+"click(findTestObject(""Alerts/Button/confirm-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.266s,PASSED
+waitForAlert(6),Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.005s,PASSED
+verifyAlertPresent(0),Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.005s,PASSED
+confirmAlertText = getAlertText(),Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.005s,PASSED
+acceptAlert(),Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.005s,PASSED
+"comment(""Klik OK pada Alert"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.004s,PASSED
+"verifyElementText(findTestObject(""Alerts/Span/span-confirm""), ""You selected Ok"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:49,0.447s,PASSED
+"verifyElementPresent(findTestObject(""Alerts/Button/confirm-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:49,18-06-2025 15:20:50,0.226s,PASSED
+"click(findTestObject(""Alerts/Button/confirm-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.270s,PASSED
+waitForAlert(6),Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.005s,PASSED
+verifyAlertPresent(0),Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.005s,PASSED
+confirmAlertText2 = getAlertText(),Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.005s,PASSED
+dismissAlert(),Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.008s,PASSED
+"comment(""Klik Cancel pada Alert"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.001s,PASSED
+"verifyElementText(findTestObject(""Alerts/Span/span-confirm""), ""You selected Cancel"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.223s,PASSED
+"promptButton = findTestObject(""Alerts/Button/prompt-btn"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.004s,PASSED
+"scrollToElement(promptButton, 5)",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:50,0.231s,PASSED
+"waitForElementClickable(promptButton, 10)",Chrome 137.0.7151.105,,,18-06-2025 15:20:50,18-06-2025 15:20:51,0.228s,PASSED
+"verifyElementPresent(findTestObject(""Alerts/Button/prompt-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.226s,PASSED
+"click(findTestObject(""Alerts/Button/prompt-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.285s,PASSED
+waitForAlert(6),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.005s,PASSED
+verifyAlertPresent(0),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.005s,PASSED
+promptAlertText = getAlertText(),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.005s,PASSED
+"verifyMatch(promptAlertText, ""Please enter your name"", false)",Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.002s,PASSED
+prompt = switchTo().alert(),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.012s,PASSED
+"nama = ""Hanif Razin - QA Engineer""",Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.000s,PASSED
+prompt.sendKeys(nama),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.005s,PASSED
+prompt.accept(),Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:51,0.005s,PASSED
+"verifyElementText(findTestObject(""Alerts/Span/span-prompt""), ""You entered "" + nama)",Chrome 137.0.7151.105,,,18-06-2025 15:20:51,18-06-2025 15:20:52,0.446s,PASSED
+closeBrowser(),Chrome 137.0.7151.105,,,18-06-2025 15:20:52,18-06-2025 15:20:52,0.143s,PASSED
+,,,,,,,
+Test Cases/Success Run Modal Dialogs,Chrome 137.0.7151.105,,,18-06-2025 15:20:52,18-06-2025 15:21:06,14.380s,PASSED
+"openBrowser(""https://demoqa.com/"")",Chrome 137.0.7151.105,,,18-06-2025 15:20:52,18-06-2025 15:20:58,6.350s,PASSED
+maximizeWindow(),Chrome 137.0.7151.105,,,18-06-2025 15:20:58,18-06-2025 15:20:59,0.425s,PASSED
+"verifyElementPresent(findTestObject(""Menu/card-alert-frame""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:59,18-06-2025 15:20:59,0.639s,PASSED
+"click(findTestObject(""Menu/card-alert-frame""))",Chrome 137.0.7151.105,,,18-06-2025 15:20:59,18-06-2025 15:20:59,0.285s,PASSED
+currentUrl = getUrl(),Chrome 137.0.7151.105,,,18-06-2025 15:20:59,18-06-2025 15:20:59,0.006s,PASSED
+"verifyMatch(currentUrl, "".*alertsWindows.*"", true)",Chrome 137.0.7151.105,,,18-06-2025 15:20:59,18-06-2025 15:20:59,0.003s,PASSED
+"verifyElementPresent(findTestObject(""Menu/modal-dialogs-menu""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:20:59,18-06-2025 15:21:01,1.343s,PASSED
+"click(findTestObject(""Menu/modal-dialogs-menu""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:01,18-06-2025 15:21:01,0.260s,PASSED
+modalUrl = getUrl(),Chrome 137.0.7151.105,,,18-06-2025 15:21:01,18-06-2025 15:21:01,0.007s,PASSED
+"verifyMatch(modalUrl, "".*modal-dialogs.*"", true)",Chrome 137.0.7151.105,,,18-06-2025 15:21:01,18-06-2025 15:21:01,0.001s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Button/small-modal-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:01,18-06-2025 15:21:02,0.627s,PASSED
+"click(findTestObject(""Modal-Dialogs/Button/small-modal-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:02,18-06-2025 15:21:03,1.009s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Modals-Dialog/Small/small-modal-dialog""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:03,18-06-2025 15:21:03,0.427s,PASSED
+"verifyElementText(findTestObject(""Modal-Dialogs/Modals-Dialog/Small/small-header""), ""Small Modal"")",Chrome 137.0.7151.105,,,18-06-2025 15:21:03,18-06-2025 15:21:03,0.234s,PASSED
+"verifyElementText(findTestObject(""Modal-Dialogs/Modals-Dialog/Small/small-body""), ""This is a small modal. It has very less content"")",Chrome 137.0.7151.105,,,18-06-2025 15:21:03,18-06-2025 15:21:04,0.227s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Modals-Dialog/Small/close-small-modal""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:04,18-06-2025 15:21:04,0.226s,PASSED
+"click(findTestObject(""Modal-Dialogs/Modals-Dialog/Small/close-small-modal""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:04,18-06-2025 15:21:04,0.257s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Button/large-modal-btn""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:04,18-06-2025 15:21:04,0.223s,PASSED
+"click(findTestObject(""Modal-Dialogs/Button/large-modal-btn""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:04,18-06-2025 15:21:05,0.260s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Modals-Dialog/Large/large-modal-dialog""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:05,18-06-2025 15:21:05,0.428s,PASSED
+"verifyElementText(findTestObject(""Modal-Dialogs/Modals-Dialog/Large/large-header""), ""Large Modal"")",Chrome 137.0.7151.105,,,18-06-2025 15:21:05,18-06-2025 15:21:05,0.229s,PASSED
+"text = getText(findTestObject(""Modal-Dialogs/Modals-Dialog/Large/large-body""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:05,18-06-2025 15:21:05,0.232s,PASSED
+"verifyMatch(text.toLowerCase(), "".*lorem ipsum.*"", true)",Chrome 137.0.7151.105,,,18-06-2025 15:21:05,18-06-2025 15:21:05,0.002s,PASSED
+"verifyElementPresent(findTestObject(""Modal-Dialogs/Modals-Dialog/Large/close-large-modal""), 0)",Chrome 137.0.7151.105,,,18-06-2025 15:21:05,18-06-2025 15:21:06,0.221s,PASSED
+"click(findTestObject(""Modal-Dialogs/Modals-Dialog/Large/close-large-modal""))",Chrome 137.0.7151.105,,,18-06-2025 15:21:06,18-06-2025 15:21:06,0.253s,PASSED
+closeBrowser(),Chrome 137.0.7151.105,,,18-06-2025 15:21:06,18-06-2025 15:21:06,0.145s,PASSED

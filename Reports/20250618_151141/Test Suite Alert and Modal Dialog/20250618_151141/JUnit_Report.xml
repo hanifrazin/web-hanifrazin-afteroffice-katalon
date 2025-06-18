@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test Suite Alert and Modal Dialog" time="37.6" tests="2" failures="0" errors="0">
+   <testsuite name="Test Suite Alert and Modal Dialog" tests="2" failures="0" errors="0" time="37.6" skipped="0" timestamp="18-06-2025T15:11:43" hostname="user - 192.168.0.103" id="Test Suites/Test Suite Alert and Modal Dialog">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/user/Desktop/web-hanifrazin-afteroffice-katalon/Reports/20250618_151141/Test Suite Alert and Modal Dialog/20250618_151141"/>
+         <property name="logFiles" value="/Users/user/Desktop/web-hanifrazin-afteroffice-katalon/Reports/20250618_151141/Test Suite Alert and Modal Dialog/20250618_151141/execution0.log, /Users/user/Desktop/web-hanifrazin-afteroffice-katalon/Reports/20250618_151141/Test Suite Alert and Modal Dialog/20250618_151141/console0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - 192.168.0.103"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+         <property name="browser" value="Chrome 137.0.7151.105"/>
+         <property name="userFullName" value="harazinny project"/>
+         <property name="hostAddress" value="192.168.0.103"/>
+         <property name="sessionId" value="3bec53d5de47357d4754ba29c0ec3dc8"/>
+         <property name="projectName" value="web-hanifrazin-afteroffice-katalon"/>
+         <property name="seleniumVersion" value="4.28.1"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Mac OS X"/>
+      </properties>
+      <testcase name="Test Cases/Success Run Alerts" time="22.808" classname="Test Cases/Success Run Alerts" status="PASSED">
+         <system-out><![CDATA[18-06-2025T15:11:44 - [TEST_CASE][PASSED] - Test Cases/Success Run Alerts: Test Cases/Success Run Alerts
+
+18-06-2025T15:11:44 - [TEST_STEP][PASSED] - openBrowser("https://demoqa.com"): Browser is opened with url: 'https://demoqa.com'
+
+18-06-2025T15:11:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-06-2025T15:11:44 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-06-2025T15:11:52 - [MESSAGE][PASSED] - Browser is opened with url: 'https://demoqa.com'
+
+18-06-2025T15:11:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-06-2025T15:11:52 - [MESSAGE][PASSED] - Current window maximized
+
+18-06-2025T15:11:52 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Menu/card-alert-frame"), 0): Object 'Object Repository/Menu/card-alert-frame' is present
+
+18-06-2025T15:11:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:11:53 - [MESSAGE][PASSED] - Object 'Object Repository/Menu/card-alert-frame' is present
+
+18-06-2025T15:11:53 - [TEST_STEP][PASSED] - click(findTestObject("Menu/card-alert-frame")): Object: 'Object Repository/Menu/card-alert-frame' is clicked on
+
+18-06-2025T15:11:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Menu/card-alert-frame' is clicked on
+
+18-06-2025T15:11:53 - [TEST_STEP][PASSED] - currentUrl = getUrl(): Current window's url is: 'https://demoqa.com/alertsWindows'
+
+18-06-2025T15:11:53 - [MESSAGE][PASSED] - Current window's url is: 'https://demoqa.com/alertsWindows'
+
+18-06-2025T15:11:53 - [TEST_STEP][PASSED] - verifyMatch(currentUrl, ".*alertsWindows.*", true): Actual text 'https://demoqa.com/alertsWindows' and expected text '.*alertsWindows.*' are matched  using regular expression
+
+18-06-2025T15:11:53 - [MESSAGE][PASSED] - Actual text 'https://demoqa.com/alertsWindows' and expected text '.*alertsWindows.*' are matched  using regular expression
+
+18-06-2025T15:11:53 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Menu/alert-menu"), 0): Object 'Object Repository/Menu/alert-menu' is present
+
+18-06-2025T15:11:53 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:11:55 - [MESSAGE][PASSED] - Object 'Object Repository/Menu/alert-menu' is present
+
+18-06-2025T15:11:55 - [TEST_STEP][PASSED] - click(findTestObject("Menu/alert-menu")): Object: 'Object Repository/Menu/alert-menu' is clicked on
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Menu/alert-menu' is clicked on
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - alertUrl = getUrl(): Current window's url is: 'https://demoqa.com/alerts'
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Current window's url is: 'https://demoqa.com/alerts'
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - verifyMatch(alertUrl, ".*alerts.*", true): Actual text 'https://demoqa.com/alerts' and expected text '.*alerts.*' are matched  using regular expression
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Actual text 'https://demoqa.com/alerts' and expected text '.*alerts.*' are matched  using regular expression
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Alerts/Button/alert-btn"), 0): Object 'Object Repository/Alerts/Button/alert-btn' is present
+
+18-06-2025T15:11:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/alert-btn' is present
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - click(findTestObject("Alerts/Button/alert-btn")): Object: 'Object Repository/Alerts/Button/alert-btn' is clicked on
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Alerts/Button/alert-btn' is clicked on
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - verifyAlertPresent(0): Alert is present after 30 second(s).
+
+18-06-2025T15:11:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Alert is present after 30 second(s).
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - alertText = getAlertText(): Get alert text successfully: 'You clicked a button'
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Get alert text successfully: 'You clicked a button'
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - verifyMatch(alertText, "You clicked a button", false): Actual text 'You clicked a button' and expected text 'You clicked a button' are matched 
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Actual text 'You clicked a button' and expected text 'You clicked a button' are matched 
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - acceptAlert(): Alert accepted
+
+18-06-2025T15:11:57 - [MESSAGE][PASSED] - Alert accepted
+
+18-06-2025T15:11:57 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Alerts/Button/timer-alert-btn"), 0): Object 'Object Repository/Alerts/Button/timer-alert-btn' is present
+
+18-06-2025T15:11:58 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:11:58 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/timer-alert-btn' is present
+
+18-06-2025T15:11:58 - [TEST_STEP][PASSED] - click(findTestObject("Alerts/Button/timer-alert-btn")): Object: 'Object Repository/Alerts/Button/timer-alert-btn' is clicked on
+
+18-06-2025T15:11:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Alerts/Button/timer-alert-btn' is clicked on
+
+18-06-2025T15:11:58 - [TEST_STEP][PASSED] - waitForAlert(6): Alert is present after 6 second(s).
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Alert is present after 6 second(s).
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - verifyAlertPresent(0): Alert is present after 30 second(s).
+
+18-06-2025T15:12:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Alert is present after 30 second(s).
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - timerAlertText = getAlertText(): Get alert text successfully: 'This alert appeared after 5 seconds'
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Get alert text successfully: 'This alert appeared after 5 seconds'
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - verifyMatch(timerAlertText, "This alert appeared after 5 seconds", false): Actual text 'This alert appeared after 5 seconds' and expected text 'This alert appeared after 5 seconds' are matched 
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Actual text 'This alert appeared after 5 seconds' and expected text 'This alert appeared after 5 seconds' are matched 
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - acceptAlert(): Alert accepted
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Alert accepted
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Alerts/Button/confirm-btn"), 0): Object 'Object Repository/Alerts/Button/confirm-btn' is present
+
+18-06-2025T15:12:03 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:03 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/confirm-btn' is present
+
+18-06-2025T15:12:03 - [TEST_STEP][PASSED] - click(findTestObject("Alerts/Button/confirm-btn")): Object: 'Object Repository/Alerts/Button/confirm-btn' is clicked on
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Alerts/Button/confirm-btn' is clicked on
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - waitForAlert(6): Alert is present after 6 second(s).
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Alert is present after 6 second(s).
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - verifyAlertPresent(0): Alert is present after 30 second(s).
+
+18-06-2025T15:12:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Alert is present after 30 second(s).
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - confirmAlertText = getAlertText(): Get alert text successfully: 'Do you confirm action?'
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Get alert text successfully: 'Do you confirm action?'
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - acceptAlert(): Alert accepted
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Alert accepted
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - comment("Klik OK pada Alert"): Klik OK pada Alert
+
+18-06-2025T15:12:04 - [MESSAGE][INFO] - Klik OK pada Alert
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Alerts/Span/span-confirm"), "You selected Ok"): Actual text and expected text of test object 'Object Repository/Alerts/Span/span-confirm' are matched.
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Alerts/Span/span-confirm' are matched.
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Alerts/Button/confirm-btn"), 0): Object 'Object Repository/Alerts/Button/confirm-btn' is present
+
+18-06-2025T15:12:04 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:04 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/confirm-btn' is present
+
+18-06-2025T15:12:04 - [TEST_STEP][PASSED] - click(findTestObject("Alerts/Button/confirm-btn")): Object: 'Object Repository/Alerts/Button/confirm-btn' is clicked on
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Alerts/Button/confirm-btn' is clicked on
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - waitForAlert(6): Alert is present after 6 second(s).
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Alert is present after 6 second(s).
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - verifyAlertPresent(0): Alert is present after 30 second(s).
+
+18-06-2025T15:12:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Alert is present after 30 second(s).
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - confirmAlertText2 = getAlertText(): Get alert text successfully: 'Do you confirm action?'
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Get alert text successfully: 'Do you confirm action?'
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - dismissAlert(): Alert dismissed
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Alert dismissed
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - comment("Klik Cancel pada Alert"): Klik Cancel pada Alert
+
+18-06-2025T15:12:05 - [MESSAGE][INFO] - Klik Cancel pada Alert
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Alerts/Span/span-confirm"), "You selected Cancel"): Actual text and expected text of test object 'Object Repository/Alerts/Span/span-confirm' are matched.
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Alerts/Span/span-confirm' are matched.
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - promptButton = findTestObject("Alerts/Button/prompt-btn"): null
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - scrollToElement(promptButton, 5): Scroll to object 'Object Repository/Alerts/Button/prompt-btn' successfully
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Alerts/Button/prompt-btn' successfully
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - waitForElementClickable(promptButton, 10): Object 'Object Repository/Alerts/Button/prompt-btn' is clickable
+
+18-06-2025T15:12:05 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/prompt-btn' is clickable
+
+18-06-2025T15:12:05 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Alerts/Button/prompt-btn"), 0): Object 'Object Repository/Alerts/Button/prompt-btn' is present
+
+18-06-2025T15:12:05 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Object 'Object Repository/Alerts/Button/prompt-btn' is present
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - click(findTestObject("Alerts/Button/prompt-btn")): Object: 'Object Repository/Alerts/Button/prompt-btn' is clicked on
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Alerts/Button/prompt-btn' is clicked on
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - waitForAlert(6): Alert is present after 6 second(s).
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Alert is present after 6 second(s).
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - verifyAlertPresent(0): Alert is present after 30 second(s).
+
+18-06-2025T15:12:06 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Alert is present after 30 second(s).
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - promptAlertText = getAlertText(): Get alert text successfully: 'Please enter your name'
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Get alert text successfully: 'Please enter your name'
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - verifyMatch(promptAlertText, "Please enter your name", false): Actual text 'Please enter your name' and expected text 'Please enter your name' are matched 
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Actual text 'Please enter your name' and expected text 'Please enter your name' are matched 
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - prompt = switchTo().alert(): null
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - nama = "Hanif Razin - QA Engineer": null
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - prompt.sendKeys(nama): null
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - prompt.accept(): null
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Alerts/Span/span-prompt"), "You entered " + nama): Actual text and expected text of test object 'Object Repository/Alerts/Span/span-prompt' are matched.
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Alerts/Span/span-prompt' are matched.
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-06-2025T15:12:06 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Success Run Modal Dialogs" time="14.574" classname="Test Cases/Success Run Modal Dialogs" status="PASSED">
+         <system-out><![CDATA[18-06-2025T15:12:06 - [TEST_CASE][PASSED] - Test Cases/Success Run Modal Dialogs: Test Cases/Success Run Modal Dialogs
+
+18-06-2025T15:12:06 - [TEST_STEP][PASSED] - openBrowser("https://demoqa.com/"): Browser is opened with url: 'https://demoqa.com/'
+
+18-06-2025T15:12:06 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+18-06-2025T15:12:06 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+18-06-2025T15:12:13 - [MESSAGE][PASSED] - Browser is opened with url: 'https://demoqa.com/'
+
+18-06-2025T15:12:13 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+18-06-2025T15:12:13 - [MESSAGE][PASSED] - Current window maximized
+
+18-06-2025T15:12:13 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Menu/card-alert-frame"), 0): Object 'Object Repository/Menu/card-alert-frame' is present
+
+18-06-2025T15:12:13 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:13 - [MESSAGE][PASSED] - Object 'Object Repository/Menu/card-alert-frame' is present
+
+18-06-2025T15:12:13 - [TEST_STEP][PASSED] - click(findTestObject("Menu/card-alert-frame")): Object: 'Object Repository/Menu/card-alert-frame' is clicked on
+
+18-06-2025T15:12:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Menu/card-alert-frame' is clicked on
+
+18-06-2025T15:12:14 - [TEST_STEP][PASSED] - currentUrl = getUrl(): Current window's url is: 'https://demoqa.com/alertsWindows'
+
+18-06-2025T15:12:14 - [MESSAGE][PASSED] - Current window's url is: 'https://demoqa.com/alertsWindows'
+
+18-06-2025T15:12:14 - [TEST_STEP][PASSED] - verifyMatch(currentUrl, ".*alertsWindows.*", true): Actual text 'https://demoqa.com/alertsWindows' and expected text '.*alertsWindows.*' are matched  using regular expression
+
+18-06-2025T15:12:14 - [MESSAGE][PASSED] - Actual text 'https://demoqa.com/alertsWindows' and expected text '.*alertsWindows.*' are matched  using regular expression
+
+18-06-2025T15:12:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Menu/modal-dialogs-menu"), 0): Object 'Object Repository/Menu/modal-dialogs-menu' is present
+
+18-06-2025T15:12:14 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:15 - [MESSAGE][PASSED] - Object 'Object Repository/Menu/modal-dialogs-menu' is present
+
+18-06-2025T15:12:15 - [TEST_STEP][PASSED] - click(findTestObject("Menu/modal-dialogs-menu")): Object: 'Object Repository/Menu/modal-dialogs-menu' is clicked on
+
+18-06-2025T15:12:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Menu/modal-dialogs-menu' is clicked on
+
+18-06-2025T15:12:16 - [TEST_STEP][PASSED] - modalUrl = getUrl(): Current window's url is: 'https://demoqa.com/modal-dialogs'
+
+18-06-2025T15:12:16 - [MESSAGE][PASSED] - Current window's url is: 'https://demoqa.com/modal-dialogs'
+
+18-06-2025T15:12:16 - [TEST_STEP][PASSED] - verifyMatch(modalUrl, ".*modal-dialogs.*", true): Actual text 'https://demoqa.com/modal-dialogs' and expected text '.*modal-dialogs.*' are matched  using regular expression
+
+18-06-2025T15:12:16 - [MESSAGE][PASSED] - Actual text 'https://demoqa.com/modal-dialogs' and expected text '.*modal-dialogs.*' are matched  using regular expression
+
+18-06-2025T15:12:16 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Button/small-modal-btn"), 0): Object 'Object Repository/Modal-Dialogs/Button/small-modal-btn' is present
+
+18-06-2025T15:12:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:17 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Button/small-modal-btn' is present
+
+18-06-2025T15:12:17 - [TEST_STEP][PASSED] - click(findTestObject("Modal-Dialogs/Button/small-modal-btn")): Object: 'Object Repository/Modal-Dialogs/Button/small-modal-btn' is clicked on
+
+18-06-2025T15:12:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Modal-Dialogs/Button/small-modal-btn' is clicked on
+
+18-06-2025T15:12:17 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Modals-Dialog/Small/small-modal-dialog"), 0): Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-modal-dialog' is present
+
+18-06-2025T15:12:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:18 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-modal-dialog' is present
+
+18-06-2025T15:12:18 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Modal-Dialogs/Modals-Dialog/Small/small-header"), "Small Modal"): Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-header' are matched.
+
+18-06-2025T15:12:18 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-header' are matched.
+
+18-06-2025T15:12:18 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Modal-Dialogs/Modals-Dialog/Small/small-body"), "This is a small modal. It has very less content"): Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-body' are matched.
+
+18-06-2025T15:12:18 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/small-body' are matched.
+
+18-06-2025T15:12:18 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Modals-Dialog/Small/close-small-modal"), 0): Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/close-small-modal' is present
+
+18-06-2025T15:12:18 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:19 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/close-small-modal' is present
+
+18-06-2025T15:12:19 - [TEST_STEP][PASSED] - click(findTestObject("Modal-Dialogs/Modals-Dialog/Small/close-small-modal")): Object: 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/close-small-modal' is clicked on
+
+18-06-2025T15:12:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Modal-Dialogs/Modals-Dialog/Small/close-small-modal' is clicked on
+
+18-06-2025T15:12:19 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Button/large-modal-btn"), 0): Object 'Object Repository/Modal-Dialogs/Button/large-modal-btn' is present
+
+18-06-2025T15:12:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:19 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Button/large-modal-btn' is present
+
+18-06-2025T15:12:19 - [TEST_STEP][PASSED] - click(findTestObject("Modal-Dialogs/Button/large-modal-btn")): Object: 'Object Repository/Modal-Dialogs/Button/large-modal-btn' is clicked on
+
+18-06-2025T15:12:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Modal-Dialogs/Button/large-modal-btn' is clicked on
+
+18-06-2025T15:12:19 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Modals-Dialog/Large/large-modal-dialog"), 0): Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-modal-dialog' is present
+
+18-06-2025T15:12:19 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:20 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-modal-dialog' is present
+
+18-06-2025T15:12:20 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Modal-Dialogs/Modals-Dialog/Large/large-header"), "Large Modal"): Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-header' are matched.
+
+18-06-2025T15:12:20 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-header' are matched.
+
+18-06-2025T15:12:20 - [TEST_STEP][PASSED] - text = getText(findTestObject("Modal-Dialogs/Modals-Dialog/Large/large-body")): Text of object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-body' is: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+
+18-06-2025T15:12:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/large-body' is: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+
+18-06-2025T15:12:20 - [TEST_STEP][PASSED] - verifyMatch(text.toLowerCase(), ".*lorem ipsum.*", true): Actual text 'lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages, and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.' and expected text '.*lorem ipsum.*' are matched  using regular expression
+
+18-06-2025T15:12:20 - [MESSAGE][PASSED] - Actual text 'lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages, and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.' and expected text '.*lorem ipsum.*' are matched  using regular expression
+
+18-06-2025T15:12:20 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Modal-Dialogs/Modals-Dialog/Large/close-large-modal"), 0): Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/close-large-modal' is present
+
+18-06-2025T15:12:20 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+18-06-2025T15:12:21 - [MESSAGE][PASSED] - Object 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/close-large-modal' is present
+
+18-06-2025T15:12:21 - [TEST_STEP][PASSED] - click(findTestObject("Modal-Dialogs/Modals-Dialog/Large/close-large-modal")): Object: 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/close-large-modal' is clicked on
+
+18-06-2025T15:12:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Modal-Dialogs/Modals-Dialog/Large/close-large-modal' is clicked on
+
+18-06-2025T15:12:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+18-06-2025T15:12:21 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[18-06-2025T15:11:43 - [TEST_SUITE][PASSED] - Test Suite Alert and Modal Dialog: Test Cases/Success Run Modal Dialogs]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

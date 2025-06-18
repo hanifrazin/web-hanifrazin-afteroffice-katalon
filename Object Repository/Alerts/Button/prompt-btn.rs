@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@id = 'promtButton']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id = 'promtButton' and @type=&quot;button&quot;]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -19,6 +23,6 @@
       <name>id</name>
       <type>Main</type>
       <value>promtButton</value>
-      <webElementGuid>7d968c68-87c7-49a6-9338-ac1bc68ad014</webElementGuid>
+      <webElementGuid>b58b4cc8-6f60-4db1-a2b1-4b7e318c9a0d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -41,6 +41,8 @@ String alertUrl = WebUI.getUrl()
 
 WebUI.verifyMatch(alertUrl, '.*alerts.*', true)
 
+TestObject alertButton = findTestObject('Alerts/Button/alert-btn')
+WebUI.waitForElementClickable(alertButton, 10)
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/alert-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/alert-btn'))
 WebUI.verifyAlertPresent(0)
@@ -48,13 +50,18 @@ String alertText = WebUI.getAlertText()
 WebUI.verifyMatch(alertText, 'You clicked a button', false)
 WebUI.acceptAlert()
 
+TestObject timeAlertButton = findTestObject('Alerts/Button/timer-alert-btn')
+WebUI.waitForElementClickable(timeAlertButton, 10)
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/timer-alert-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/timer-alert-btn'))
-WebUI.waitForAlert(6)
+WebUI.waitForAlert(10)
 WebUI.verifyAlertPresent(0)
 String timerAlertText = WebUI.getAlertText()
 WebUI.verifyMatch(timerAlertText, 'This alert appeared after 5 seconds', false)
 WebUI.acceptAlert()
+
+TestObject confirmButton = findTestObject('Alerts/Button/confirm-btn')
+WebUI.waitForElementClickable(confirmButton, 10)
 
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/confirm-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/confirm-btn'))
@@ -64,7 +71,6 @@ String confirmAlertText = WebUI.getAlertText()
 WebUI.acceptAlert()
 WebUI.comment("Klik OK pada Alert")
 WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Ok")
-
 
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/confirm-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/confirm-btn'))
@@ -76,6 +82,9 @@ WebUI.comment("Klik Cancel pada Alert")
 WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Cancel")
 
 
+TestObject promptButton = findTestObject('Alerts/Button/prompt-btn')
+WebUI.scrollToElement(promptButton, 5)
+WebUI.waitForElementClickable(promptButton, 10)
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/prompt-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/prompt-btn'))
 WebUI.waitForAlert(6)
