@@ -1,0 +1,94 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import junit.framework.Assert
+
+import org.openqa.selenium.Alert
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('https://demoqa.com')
+
+WebUI.maximizeWindow();
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Menu/card-alert-frame'), 0)
+
+WebUI.click(findTestObject('Alerts/Menu/card-alert-frame'))
+
+String currentUrl = WebUI.getUrl()
+
+WebUI.verifyMatch(currentUrl, '.*alertsWindows.*', true)
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Menu/alert-menu'), 0)
+
+WebUI.click(findTestObject('Alerts/Menu/alert-menu'))
+
+String alertUrl = WebUI.getUrl()
+
+WebUI.verifyMatch(alertUrl, '.*alerts.*', true)
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Button/alert-btn'), 0)
+WebUI.click(findTestObject('Alerts/Button/alert-btn'))
+WebUI.verifyAlertPresent(0)
+String alertText = WebUI.getAlertText()
+WebUI.verifyMatch(alertText, 'You clicked a button', false)
+WebUI.acceptAlert()
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Button/timer-alert-btn'), 0)
+WebUI.click(findTestObject('Alerts/Button/timer-alert-btn'))
+WebUI.waitForAlert(6)
+WebUI.verifyAlertPresent(0)
+String timerAlertText = WebUI.getAlertText()
+WebUI.verifyMatch(timerAlertText, 'This alert appeared after 5 seconds', false)
+WebUI.acceptAlert()
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Button/confirm-btn'), 0)
+WebUI.click(findTestObject('Alerts/Button/confirm-btn'))
+WebUI.waitForAlert(6)
+WebUI.verifyAlertPresent(0)
+String confirmAlertText = WebUI.getAlertText()
+WebUI.acceptAlert()
+WebUI.comment("Klik OK pada Alert")
+WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Ok")
+//String okText = WebUI.getText(findTestObject("Object Repository/Alerts/Span/span-confirm"))
+//WebUI.verifyMatch(okText, "You selected Ok", false)
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Button/confirm-btn'), 0)
+WebUI.click(findTestObject('Alerts/Button/confirm-btn'))
+WebUI.waitForAlert(6)
+WebUI.verifyAlertPresent(0)
+String confirmAlertText2 = WebUI.getAlertText()
+WebUI.dismissAlert()
+WebUI.comment("Klik Cancel pada Alert")
+WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Cancel")
+//String cancelText = WebUI.getText(findTestObject("Object Repository/Alerts/Span/span-confirm"))
+//WebUI.verifyMatch(cancelText, "You selected Cancel", false)
+
+WebUI.verifyElementPresent(findTestObject('Alerts/Button/prompt-btn'), 0)
+WebUI.click(findTestObject('Alerts/Button/prompt-btn'))
+WebUI.waitForAlert(6)
+WebUI.verifyAlertPresent(0)
+String promptAlertText = WebUI.getAlertText()
+WebUI.verifyMatch(promptAlertText, 'Please enter your name', false)
+Alert prompt = DriverFactory.getWebDriver().switchTo().alert()
+String nama = "Hanif Razin - QA Engineer"
+prompt.sendKeys(nama)
+prompt.accept()
+WebUI.verifyElementText(findTestObject('Alerts/Span/span-prompt'), "You entered "+nama)
+
+WebUI.closeBrowser()
+
