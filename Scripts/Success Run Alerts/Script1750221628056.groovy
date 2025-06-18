@@ -64,8 +64,7 @@ String confirmAlertText = WebUI.getAlertText()
 WebUI.acceptAlert()
 WebUI.comment("Klik OK pada Alert")
 WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Ok")
-//String okText = WebUI.getText(findTestObject("Object Repository/Alerts/Span/span-confirm"))
-//WebUI.verifyMatch(okText, "You selected Ok", false)
+
 
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/confirm-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/confirm-btn'))
@@ -75,8 +74,7 @@ String confirmAlertText2 = WebUI.getAlertText()
 WebUI.dismissAlert()
 WebUI.comment("Klik Cancel pada Alert")
 WebUI.verifyElementText(findTestObject('Alerts/Span/span-confirm'), "You selected Cancel")
-//String cancelText = WebUI.getText(findTestObject("Object Repository/Alerts/Span/span-confirm"))
-//WebUI.verifyMatch(cancelText, "You selected Cancel", false)
+
 
 WebUI.verifyElementPresent(findTestObject('Alerts/Button/prompt-btn'), 0)
 WebUI.click(findTestObject('Alerts/Button/prompt-btn'))
