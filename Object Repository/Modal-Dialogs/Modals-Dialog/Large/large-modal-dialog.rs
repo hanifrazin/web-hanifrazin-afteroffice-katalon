@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>alert-menu</name>
+   <name>large-modal-dialog</name>
    <tag></tag>
-   <elementGuidId>f149ab49-a3a8-48b5-aed6-7493fac1c9c3</elementGuidId>
+   <elementGuidId>4f28e116-1e2a-4ded-92d3-c07b0d768b5b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul//li/span[text()=&quot;Alerts&quot;]</value>
+         <value>//div[@class=&quot;modal-dialog modal-lg&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

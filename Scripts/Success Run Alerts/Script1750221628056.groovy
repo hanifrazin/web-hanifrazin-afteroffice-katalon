@@ -25,17 +25,17 @@ WebUI.openBrowser('https://demoqa.com')
 
 WebUI.maximizeWindow();
 
-WebUI.verifyElementPresent(findTestObject('Alerts/Menu/card-alert-frame'), 0)
+WebUI.verifyElementPresent(findTestObject('Menu/card-alert-frame'), 0)
 
-WebUI.click(findTestObject('Alerts/Menu/card-alert-frame'))
+WebUI.click(findTestObject('Menu/card-alert-frame'))
 
 String currentUrl = WebUI.getUrl()
 
 WebUI.verifyMatch(currentUrl, '.*alertsWindows.*', true)
 
-WebUI.verifyElementPresent(findTestObject('Alerts/Menu/alert-menu'), 0)
+WebUI.verifyElementPresent(findTestObject('Menu/alert-menu'), 0)
 
-WebUI.click(findTestObject('Alerts/Menu/alert-menu'))
+WebUI.click(findTestObject('Menu/alert-menu'))
 
 String alertUrl = WebUI.getUrl()
 
